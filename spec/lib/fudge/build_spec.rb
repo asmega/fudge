@@ -3,6 +3,10 @@ require 'spec_helper'
 describe Fudge::Build do
   it { should be_a Fudge::Tasks::CompositeTask }
 
+  it 'fails' do
+    true.should be_false
+  end
+
   describe "#run" do
 
     context "when provided an output" do
